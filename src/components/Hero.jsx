@@ -79,14 +79,14 @@ const Hero = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Curso de Fotografía y
+            Fotografía & Filmmaking
             <motion.span 
               className="block text-[#90E0EF] mt-2"
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
             >
-              Filmmaker
+              para Crear Contenido de Calidad
             </motion.span>
           </motion.h1>
           
@@ -96,7 +96,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.7 }}
           >
-            Aprende a capturar imágenes increíbles con cámaras y celulares 📸
+            Aprendé a capturar imágenes increíbles con cámaras y celulares 📸
           </motion.p>
 
           {/* Video Section */}
