@@ -50,9 +50,9 @@ const Modules = () => {
         }}
       />
 
-      <div className="max-w-6xl mx-auto relative z-10">
+      <div className="max-w-6xl mx-auto relative z-10 px-4 sm:px-6">
         <motion.h2 
-          className="text-4xl md:text-5xl lg:text-6xl font-title font-bold text-[#0077B6] text-center mb-4"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-title font-bold text-[#0077B6] text-center mb-3 sm:mb-4"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -62,7 +62,7 @@ const Modules = () => {
         </motion.h2>
 
         <motion.p
-          className="text-center text-[#0A0A0A] text-lg mb-16 max-w-2xl mx-auto"
+          className="text-center text-[#0A0A0A] text-base sm:text-lg mb-10 sm:mb-16 max-w-2xl mx-auto px-4"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -71,7 +71,7 @@ const Modules = () => {
           4 módulos diseñados para llevarte de principiante a profesional
         </motion.p>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
           {modules.map((module, index) => {
             const Icon = module.icon
             return (
@@ -99,7 +99,7 @@ const Modules = () => {
 
                   {/* Icon Container */}
                   <motion.div 
-                    className={`w-20 h-20 ${module.color} rounded-2xl mx-auto mb-6 flex items-center justify-center ${module.textColor} shadow-lg relative z-10`}
+                    className={`w-16 h-16 sm:w-20 sm:h-20 ${module.color} rounded-xl sm:rounded-2xl mx-auto mb-4 sm:mb-6 flex items-center justify-center ${module.textColor} shadow-lg relative z-10`}
                     whileHover={{ 
                       rotate: [0, -10, 10, -10, 0],
                       scale: 1.1
@@ -110,14 +110,14 @@ const Modules = () => {
                   </motion.div>
 
                   {/* Module Number */}
-                  <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-br from-[#0077B6] to-[#00B4D8] rounded-full flex items-center justify-center text-white font-bold text-sm">
+                  <div className="absolute top-3 right-3 sm:top-4 sm:right-4 w-7 h-7 sm:w-8 sm:h-8 bg-gradient-to-br from-[#0077B6] to-[#00B4D8] rounded-full flex items-center justify-center text-white font-bold text-xs sm:text-sm">
                     {index + 1}
                   </div>
 
-                  <h3 className="text-xl font-title font-semibold text-[#0077B6] mb-4 relative z-10">
+                  <h3 className="text-base sm:text-lg md:text-xl font-title font-semibold text-[#0077B6] mb-2 sm:mb-4 relative z-10 px-2">
                     {module.title}
                   </h3>
-                  <p className="text-[#0A0A0A] font-body relative z-10">
+                  <p className="text-sm sm:text-base text-[#0A0A0A] font-body relative z-10 px-2">
                     {module.description}
                   </p>
 

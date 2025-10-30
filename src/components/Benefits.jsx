@@ -49,9 +49,9 @@ const Benefits = () => {
         }}
       />
 
-      <div className="max-w-5xl mx-auto relative z-10">
+      <div className="max-w-5xl mx-auto relative z-10 px-4 sm:px-6">
         <motion.h2 
-          className="text-4xl md:text-5xl lg:text-6xl font-title font-bold text-[#0077B6] text-center mb-4"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-title font-bold text-[#0077B6] text-center mb-3 sm:mb-4"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -61,7 +61,7 @@ const Benefits = () => {
         </motion.h2>
 
         <motion.p
-          className="text-center text-[#0A0A0A] text-lg mb-16 max-w-2xl mx-auto"
+          className="text-center text-[#0A0A0A] text-base sm:text-lg mb-10 sm:mb-16 max-w-2xl mx-auto px-4"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -70,18 +70,18 @@ const Benefits = () => {
           Resultados reales y tangibles desde el primer módulo
         </motion.p>
         
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
           {benefits.map((benefit, index) => (
             <motion.div
               key={index}
-              className="flex items-start space-x-4 group"
+              className="flex items-start space-x-3 sm:space-x-4 group"
               initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <motion.div 
-                className="w-12 h-12 bg-gradient-to-br from-[#0077B6] to-[#00B4D8] rounded-xl flex items-center justify-center text-white flex-shrink-0 mt-1 shadow-lg"
+                className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-[#0077B6] to-[#00B4D8] rounded-lg sm:rounded-xl flex items-center justify-center text-white flex-shrink-0 mt-1 shadow-lg"
                 whileHover={{ 
                   rotate: 360,
                   scale: 1.1
@@ -91,7 +91,7 @@ const Benefits = () => {
                 <CheckIcon />
               </motion.div>
               <motion.div
-                className="flex-1 bg-white p-6 rounded-2xl shadow-md border border-[#00B4D8] border-opacity-20 transition-colors duration-300"
+                className="flex-1 bg-white p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-md border border-[#00B4D8] border-opacity-20 transition-colors duration-300"
                 whileHover={{ 
                   scale: 1.03,
                   boxShadow: "0 20px 40px rgba(0,180,216,0.2)",
@@ -99,10 +99,10 @@ const Benefits = () => {
                 }}
                 transition={{ duration: 0.3 }}
               >
-                <h3 className="text-xl font-title font-semibold text-[#0077B6] mb-2">
+                <h3 className="text-base sm:text-lg md:text-xl font-title font-semibold text-[#0077B6] mb-1 sm:mb-2">
                   {benefit.title}
                 </h3>
-                <p className="text-[#0A0A0A] font-body">
+                <p className="text-sm sm:text-base text-[#0A0A0A] font-body">
                   {benefit.description}
                 </p>
               </motion.div>

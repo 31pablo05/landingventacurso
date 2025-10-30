@@ -20,9 +20,9 @@ const Certificate = () => {
         }}
       />
 
-      <div className="max-w-6xl mx-auto relative z-10">
+      <div className="max-w-6xl mx-auto relative z-10 px-4 sm:px-6">
         <motion.h2 
-          className="text-4xl md:text-5xl lg:text-6xl font-title font-bold text-[#0A0A0A] text-center mb-4"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-title font-bold text-[#0A0A0A] text-center mb-3 sm:mb-4"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -32,7 +32,7 @@ const Certificate = () => {
         </motion.h2>
 
         <motion.p
-          className="text-center text-[#0A0A0A] text-xl mb-16 max-w-2xl mx-auto"
+          className="text-center text-[#0A0A0A] text-base sm:text-lg md:text-xl mb-10 sm:mb-16 max-w-2xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -50,7 +50,7 @@ const Certificate = () => {
         >
           {/* Certificate Demo */}
           <motion.div 
-            className="bg-white rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden"
+            className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 shadow-2xl relative overflow-hidden"
             whileHover={{ 
               scale: 1.02,
               boxShadow: "0 30px 60px rgba(0,0,0,0.3)"
@@ -79,57 +79,57 @@ const Certificate = () => {
               </motion.div>
 
               {/* Title */}
-              <h3 className="text-3xl md:text-4xl font-title font-bold text-[#0077B6] mb-4">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-title font-bold text-[#0077B6] mb-3 sm:mb-4">
                 Certificado de Finalización
               </h3>
 
-              <div className="w-32 h-1 bg-gradient-to-r from-[#0077B6] to-[#00B4D8] mx-auto mb-6 rounded-full"></div>
+              <div className="w-24 sm:w-32 h-1 bg-gradient-to-r from-[#0077B6] to-[#00B4D8] mx-auto mb-4 sm:mb-6 rounded-full"></div>
 
               {/* Subtitle */}
-              <p className="text-xl md:text-2xl text-[#0A0A0A] mb-8 font-body">
+              <p className="text-lg sm:text-xl md:text-2xl text-[#0A0A0A] mb-6 sm:mb-8 font-body">
                 Curso de Fotografía y Filmmaker
               </p>
 
               {/* Student Name (Example) */}
-              <div className="mb-8">
-                <p className="text-lg text-[#0A0A0A] mb-2">Este certificado se otorga a:</p>
-                <p className="text-3xl md:text-4xl font-title font-bold text-[#0077B6] mb-2">
+              <div className="mb-6 sm:mb-8">
+                <p className="text-sm sm:text-base md:text-lg text-[#0A0A0A] mb-2">Este certificado se otorga a:</p>
+                <p className="text-2xl sm:text-3xl md:text-4xl font-title font-bold text-[#0077B6] mb-2">
                   Tu Nombre Aquí
                 </p>
-                <div className="w-64 h-0.5 bg-[#0077B6] mx-auto"></div>
+                <div className="w-48 sm:w-64 h-0.5 bg-[#0077B6] mx-auto"></div>
               </div>
 
               {/* Description */}
-              <p className="text-[#0A0A0A] mb-8 max-w-2xl mx-auto">
+              <p className="text-sm sm:text-base text-[#0A0A0A] mb-6 sm:mb-8 max-w-2xl mx-auto px-4 sm:px-0">
                 Por haber completado exitosamente el programa de fotografía y filmación profesional,
                 demostrando competencia en técnicas de captura, composición, iluminación y edición.
               </p>
 
               {/* Details Grid */}
-              <div className="grid md:grid-cols-3 gap-6 mb-8">
-                <div className="bg-gradient-to-br from-[#90E0EF] to-white p-6 rounded-xl border border-[#00B4D8] border-opacity-30">
-                  <p className="text-sm text-[#0A0A0A] mb-2">Fecha</p>
-                  <p className="text-lg font-semibold text-[#0077B6]">Octubre 2025</p>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mb-6 sm:mb-8">
+                <div className="bg-gradient-to-br from-[#90E0EF] to-white p-4 sm:p-6 rounded-lg sm:rounded-xl border border-[#00B4D8] border-opacity-30">
+                  <p className="text-xs sm:text-sm text-[#0A0A0A] mb-1 sm:mb-2">Fecha</p>
+                  <p className="text-base sm:text-lg font-semibold text-[#0077B6]">Octubre 2025</p>
                 </div>
-                <div className="bg-gradient-to-br from-[#90E0EF] to-white p-6 rounded-xl border border-[#00B4D8] border-opacity-30">
-                  <p className="text-sm text-[#0A0A0A] mb-2">Duración</p>
-                  <p className="text-lg font-semibold text-[#0077B6]">5 Semanas</p>
+                <div className="bg-gradient-to-br from-[#90E0EF] to-white p-4 sm:p-6 rounded-lg sm:rounded-xl border border-[#00B4D8] border-opacity-30">
+                  <p className="text-xs sm:text-sm text-[#0A0A0A] mb-1 sm:mb-2">Duración</p>
+                  <p className="text-base sm:text-lg font-semibold text-[#0077B6]">5 Semanas</p>
                 </div>
-                <div className="bg-gradient-to-br from-[#90E0EF] to-white p-6 rounded-xl border border-[#00B4D8] border-opacity-30">
-                  <p className="text-sm text-[#0A0A0A] mb-2">ID Certificado</p>
-                  <p className="text-lg font-semibold text-[#0077B6]">FOTO-2025-001</p>
+                <div className="bg-gradient-to-br from-[#90E0EF] to-white p-4 sm:p-6 rounded-lg sm:rounded-xl border border-[#00B4D8] border-opacity-30">
+                  <p className="text-xs sm:text-sm text-[#0A0A0A] mb-1 sm:mb-2">ID Certificado</p>
+                  <p className="text-base sm:text-lg font-semibold text-[#0077B6]">FOTO-2025-001</p>
                 </div>
               </div>
 
               {/* Signature Area */}
-              <div className="flex justify-center items-end space-x-12 pt-8 border-t border-[#0077B6]/20">
+              <div className="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-12 pt-6 sm:pt-8 border-t border-[#0077B6]/20">
                 <div className="text-center">
-                  <div className="w-48 h-0.5 bg-[#0077B6] mb-2"></div>
-                  <p className="text-sm text-[#0A0A0A]">Instructor del Curso</p>
+                  <div className="w-40 sm:w-48 h-0.5 bg-[#0077B6] mb-2"></div>
+                  <p className="text-xs sm:text-sm text-[#0A0A0A]">Instructor del Curso</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-48 h-0.5 bg-[#0077B6] mb-2"></div>
-                  <p className="text-sm text-[#0A0A0A]">Fecha de emisión</p>
+                  <div className="w-40 sm:w-48 h-0.5 bg-[#0077B6] mb-2"></div>
+                  <p className="text-xs sm:text-sm text-[#0A0A0A]">Fecha de emisión</p>
                 </div>
               </div>
             </div>

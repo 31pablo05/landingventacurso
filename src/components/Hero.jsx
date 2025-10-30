@@ -67,14 +67,14 @@ const Hero = () => {
         }}
       />
 
-      <div className="relative z-10 max-w-6xl mx-auto section-padding text-center px-4">
+      <div className="relative z-10 max-w-6xl mx-auto section-padding text-center px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
           <motion.h1 
-            className="text-5xl md:text-7xl lg:text-8xl font-title font-bold text-white mb-6 leading-tight"
+            className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-title font-bold text-white mb-4 sm:mb-6 leading-tight px-2"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -91,7 +91,7 @@ const Hero = () => {
           </motion.h1>
           
           <motion.p 
-            className="text-xl md:text-3xl text-[#90E0EF] mb-8 font-body font-light"
+            className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-[#90E0EF] mb-6 sm:mb-8 font-body font-light px-2"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.7 }}
@@ -101,12 +101,12 @@ const Hero = () => {
 
           {/* Video Section */}
           <motion.div
-            className="mb-12 max-w-3xl mx-auto"
+            className="mb-8 sm:mb-12 max-w-3xl mx-auto px-2 sm:px-0"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.9 }}
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
+            <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl group">
               <video
                 ref={videoRef}
                 className="w-full h-auto"
@@ -149,20 +149,20 @@ const Hero = () => {
           </motion.div>
 
           <motion.div 
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
+            className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center mb-8 sm:mb-12 px-4 sm:px-0"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.1 }}
           >
             <motion.button 
-              className="bg-[#0077B6] hover:bg-[#00B4D8] text-white font-semibold text-lg px-8 py-4 rounded-full shadow-2xl transition-colors duration-300"
+              className="w-full sm:w-auto bg-[#0077B6] hover:bg-[#00B4D8] text-white font-semibold text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-full shadow-2xl transition-colors duration-300"
               whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(0,180,216,0.4)" }}
               whileTap={{ scale: 0.95 }}
             >
               Inscríbete ahora
             </motion.button>
             <motion.button 
-              className="bg-transparent hover:bg-[#00B4D8] text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 backdrop-blur-sm border-2 border-[#00B4D8]"
+              className="w-full sm:w-auto bg-transparent hover:bg-[#00B4D8] text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-full transition-all duration-300 backdrop-blur-sm border-2 border-[#00B4D8]"
               whileHover={{ scale: 1.05, backgroundColor: "#00B4D8" }}
               whileTap={{ scale: 0.95 }}
             >
@@ -171,12 +171,13 @@ const Hero = () => {
           </motion.div>
 
           <motion.div
+            className="px-4 sm:px-0"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.3 }}
           >
             <motion.div 
-              className="bg-[#0077B6] bg-opacity-20 backdrop-blur-md rounded-2xl p-8 max-w-md mx-auto border border-[#00B4D8] border-opacity-50"
+              className="bg-[#0077B6] bg-opacity-20 backdrop-blur-md rounded-xl sm:rounded-2xl p-6 sm:p-8 max-w-md mx-auto border border-[#00B4D8] border-opacity-50"
               whileHover={{ 
                 scale: 1.05,
                 backgroundColor: "rgba(0, 119, 182, 0.3)",
@@ -185,7 +186,7 @@ const Hero = () => {
               transition={{ duration: 0.3 }}
             >
               <motion.div 
-                className="w-24 h-24 bg-[#00B4D8] rounded-full mx-auto mb-4 flex items-center justify-center shadow-lg"
+                className="w-20 h-20 sm:w-24 sm:h-24 bg-[#00B4D8] rounded-full mx-auto mb-4 flex items-center justify-center shadow-lg"
                 animate={{
                   rotate: [0, 5, -5, 0],
                 }}
@@ -197,7 +198,7 @@ const Hero = () => {
               >
                 <CameraIcon />
               </motion.div>
-              <p className="text-white font-body text-lg">
+              <p className="text-white font-body text-base sm:text-lg">
                 Transforma tu contenido visual con técnicas profesionales
               </p>
             </motion.div>

@@ -42,9 +42,9 @@ const CourseDetails = () => {
         }}
       />
 
-      <div className="max-w-5xl mx-auto relative z-10">
+      <div className="max-w-5xl mx-auto relative z-10 px-4 sm:px-6">
         <motion.h2 
-          className="text-4xl md:text-5xl lg:text-6xl font-title font-bold text-white text-center mb-4"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-title font-bold text-white text-center mb-3 sm:mb-4"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -54,7 +54,7 @@ const CourseDetails = () => {
         </motion.h2>
 
         <motion.p
-          className="text-center text-[#F5F5F5] text-lg mb-16 max-w-2xl mx-auto"
+          className="text-center text-[#F5F5F5] text-base sm:text-lg mb-10 sm:mb-16 max-w-2xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -63,7 +63,7 @@ const CourseDetails = () => {
           Todo lo que necesitas saber sobre el programa
         </motion.p>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-10 sm:mb-16">
           {details.map((detail, index) => {
             const Icon = detail.icon
             return (
@@ -83,7 +83,7 @@ const CourseDetails = () => {
                   transition={{ duration: 0.5 }}
                 >
                   <motion.div 
-                    className={`w-24 h-24 ${detail.color} rounded-2xl mx-auto mb-6 flex items-center justify-center text-white shadow-xl`}
+                    className={`w-20 h-20 sm:w-24 sm:h-24 ${detail.color} rounded-xl sm:rounded-2xl mx-auto mb-4 sm:mb-6 flex items-center justify-center text-white shadow-xl`}
                     animate={{
                       boxShadow: [
                         "0 10px 30px rgba(0,0,0,0.1)",
@@ -100,10 +100,10 @@ const CourseDetails = () => {
                     <Icon />
                   </motion.div>
                 </motion.div>
-                <h3 className="text-2xl md:text-3xl font-title font-semibold text-white mb-2">
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-title font-semibold text-white mb-1 sm:mb-2">
                   {detail.title}
                 </h3>
-                <p className="text-[#F5F5F5] font-body text-lg">
+                <p className="text-[#F5F5F5] font-body text-sm sm:text-base md:text-lg">
                   {detail.description}
                 </p>
               </motion.div>
@@ -113,17 +113,17 @@ const CourseDetails = () => {
 
         {/* Course Plan / Curriculum Preview */}
         <motion.div
-          className="bg-[#0077B6] bg-opacity-10 backdrop-blur-md rounded-3xl p-8 md:p-12 shadow-xl border border-[#00B4D8] border-opacity-30"
+          className="bg-[#0077B6] bg-opacity-10 backdrop-blur-md rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 shadow-xl border border-[#00B4D8] border-opacity-30"
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h3 className="text-3xl font-title font-bold text-white mb-8 text-center">
+          <h3 className="text-2xl sm:text-3xl font-title font-bold text-white mb-6 sm:mb-8 text-center">
             Plan de estudios
           </h3>
           
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
             {[
               { week: "Semana 1", topic: "Fundamentos de fotografía y equipo" },
               { week: "Semana 2", topic: "Composición e iluminación" },

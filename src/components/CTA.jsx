@@ -32,7 +32,7 @@ const CTA = () => {
         }}
       />
 
-      <div className="max-w-4xl mx-auto text-center relative z-10">
+      <div className="max-w-4xl mx-auto text-center relative z-10 px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -40,7 +40,7 @@ const CTA = () => {
           transition={{ duration: 0.8 }}
         >
           <motion.h2 
-            className="text-4xl md:text-5xl lg:text-6xl font-title font-bold text-white mb-6 leading-tight"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-title font-bold text-white mb-4 sm:mb-6 leading-tight"
             animate={{
               textShadow: [
                 "0 0 20px rgba(255,255,255,0.3)",
@@ -58,7 +58,7 @@ const CTA = () => {
           </motion.h2>
           
           <motion.p 
-            className="text-xl md:text-2xl text-white mb-12 font-body"
+            className="text-base sm:text-lg md:text-xl lg:text-2xl text-white mb-8 sm:mb-12 font-body"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
@@ -69,7 +69,7 @@ const CTA = () => {
 
           {/* Main CTA Button */}
           <motion.button 
-            className="bg-white text-[#0077B6] hover:bg-[#F5F5F5] font-bold py-6 px-12 rounded-full text-xl shadow-2xl mb-8 inline-flex items-center space-x-3 transition-colors duration-300"
+            className="w-full sm:w-auto bg-white text-[#0077B6] hover:bg-[#F5F5F5] font-bold py-4 sm:py-6 px-8 sm:px-12 rounded-full text-lg sm:text-xl shadow-2xl mb-6 sm:mb-8 inline-flex items-center justify-center space-x-3 transition-colors duration-300"
             whileHover={{ 
               scale: 1.1,
               boxShadow: "0 25px 50px rgba(0,0,0,0.3)"
@@ -95,7 +95,7 @@ const CTA = () => {
 
           {/* Trust Indicators */}
           <motion.div
-            className="flex flex-col sm:flex-row justify-center items-center gap-8 text-white"
+            className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 md:gap-8 text-white"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
@@ -105,22 +105,22 @@ const CTA = () => {
               className="flex items-center space-x-2"
               whileHover={{ scale: 1.1 }}
             >
-              <span className="text-2xl">✓</span>
-              <span className="font-body">Acceso inmediato</span>
+              <span className="text-xl sm:text-2xl">✓</span>
+              <span className="font-body text-sm sm:text-base">Acceso inmediato</span>
             </motion.div>
             <motion.div 
               className="flex items-center space-x-2"
               whileHover={{ scale: 1.1 }}
             >
-              <span className="text-2xl">✓</span>
-              <span className="font-body">Soporte personalizado</span>
+              <span className="text-xl sm:text-2xl">✓</span>
+              <span className="font-body text-sm sm:text-base">Soporte personalizado</span>
             </motion.div>
             <motion.div 
               className="flex items-center space-x-2"
               whileHover={{ scale: 1.1 }}
             >
-              <span className="text-2xl">✓</span>
-              <span className="font-body">Certificado incluido</span>
+              <span className="text-xl sm:text-2xl">✓</span>
+              <span className="font-body text-sm sm:text-base">Certificado incluido</span>
             </motion.div>
           </motion.div>
 
